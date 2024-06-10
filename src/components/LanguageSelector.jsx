@@ -12,7 +12,7 @@ const GlobeIcon = () => (
 );
 
 export const LanguageSelector = () => {
-    const { i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     const currLang = cookies.get('i18next') || 'en';
     const currLangObj = languages.find((l)=> l.code === currLang)
     const currentCountryCode = currLangObj.country_code;
@@ -49,7 +49,7 @@ export const LanguageSelector = () => {
                 <span
                   className={`fi fi-${country_code} mx-2`}
                 ></span>
-                {name}
+                {t(name)}
               </button>
             </li>
           ))}
