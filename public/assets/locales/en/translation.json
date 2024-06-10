@@ -1,4 +1,8 @@
 {
+    "English" : "English",
+    "Hindi" : "हिंदी",
+    "French" : "Français",
+    "Arabic" : "عربي",
     "bookManagement": "Book Management",
     "about": "About",
     "contact": "Contact",
